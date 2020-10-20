@@ -1,11 +1,16 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Rodape from './Components/footer';
+import Titulo from './Components/Titulo';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+
+        <Titulo texto="login"  descricao="Informe os dados abaixo"/>
+
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -19,6 +24,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <Rodape />
     </div>
   );
 }
